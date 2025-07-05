@@ -1,0 +1,326 @@
+    :root {
+      --primary-green: #2E7D32;
+      --light-green:   #66BB6A;
+      --dark-text:     #212121;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--dark-text);
+      scroll-behavior: smooth;
+    }
+    .btn-contact {
+      background-color: var(--primary-green);
+      border-color: var(--primary-green);
+      color: #fff;
+    }
+    .btn-contact:hover {
+      background-color: var(--light-green);
+      border-color: var(--light-green);
+      color: #fff;
+    }
+    nav {
+      background-color: #ffffff;
+    }
+    .hero {
+      background: url('/assets/1.webp') center/cover no-repeat;
+      color: #fff;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    section {
+      padding: 60px 0;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+
+
+
+
+
+/* Contact Section */
+#contact {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #212121;
+}
+
+#contact .section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2E7D32;
+}
+
+#contact p.lead {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+#contact .contact-info p {
+  margin-bottom: 0.75rem;
+}
+
+#contact .contact-info i {
+  color: #2E7D32;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+#contact .contact-info a {
+  color: #212121;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+#contact .contact-info a:hover {
+  color: #2E7D32;
+}
+
+#contact .btn-contact {
+  background-color: #2E7D32;
+  color: #fff;
+  border: 1px solid #2E7D32;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#contact .btn-contact:hover {
+  background-color: #66BB6A;
+  border-color: #66BB6A;
+}
+
+
+
+
+
+
+/* Reviews Section */
+#reviews {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  font-family: 'Montserrat', sans-serif;
+  color: #212121;
+}
+
+
+#reviews .review-card {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+#reviews .review-card .card-body {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+#reviews .review-card .stars {
+  color: #66BB6A;
+  margin-bottom: 0.75rem;
+}
+
+#reviews .review-card .stars i {
+  margin: 0 2px;
+}
+
+#reviews .review-card .card-text {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin: 1rem 0;
+}
+
+#reviews .review-card .card-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+#reviews .review-card .reviewer {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer con patrón natural de hojas */
+.footer {
+  background-color: #000000;
+  /* Patrón de hojas SVG repetido */
+  background-repeat: repeat;
+  background-size: 60px 60px;
+  color: #f8f9fa;
+  padding: 60px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer h5 {
+  color: #66BB6A;
+  margin-bottom: 1rem;
+}
+
+.footer p,
+.footer a {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #66BB6A;
+}
+
+.footer .social-icons a {
+  margin: 0 8px;
+  font-size: 1.4rem;
+  color: #f8f9fa;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #66BB6A;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  font-size: 0.8rem;
+}
+
+
+
+
+
+/* Dark overlay for the footer background image */
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;                /* fills the entire footer */
+  background: rgba(0,0,0,.45); /* tweak opacity to taste */
+  z-index: 0;              /* sits behind real content */
+}
+
+.footer > .container,
+.footer > .container * {
+  position: relative;
+  z-index: 1;              /* pulls everything above the overlay */
+}
+
+
+
+
+/* ========== Floating WhatsApp Button ========== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;     /* distance from bottom */
+  right: 20px;      /* distance from right edge */
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;   /* WhatsApp green */
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;             /* icon size */
+  box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  z-index: 1050;               /* on top of most elements */
+  transition: transform .2s ease-in-out;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Polished Contact Styles ===== */
+.bg-gradient-light {
+  background: linear-gradient(180deg,#f8f9fa 0%,#e9ecef 100%);
+}
+
+.contact-card {
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 1rem rgba(0,0,0,.05);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,.1);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: #0d6efd;               /* Bootstrap primary */
+}
+
+.stretched-link {
+  text-decoration: none;
+}
+
+.stretched-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+

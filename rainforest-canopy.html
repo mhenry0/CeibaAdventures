@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ceiba Adventures</title>
+<meta name="description" content="Ceiba Adventures is a Costa Rican tour operator specializing in eco-friendly rainforest canopy tours, volcano hikes, beach & surf experiences, and custom itineraries—led by local experts, with small groups, sustainable practices, and unforgettable wildlife encounters.">
+  <link rel="canonical" href="https://yourportfolio.com/">
+  <link rel="icon" href="./assets/Proyecto Creador de logotipos.png" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous"
+  >
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  >
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm" style="z-index: 1020;">
+  <div class="container">
+    <!-- Brand + Toggler -->
+    <a class="navbar-brand" href="./index.html">
+      <img
+        src="./assets/Proyecto Creador de logotipos.png"
+        alt="Logo"
+        width="80"
+        height="80"
+        class="d-inline-block align-text-top"
+      >
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible menu stays within container -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+<!-- Tours dropdown -->
+<li class="nav-item dropdown">
+  <a class="nav-link active dropdown-toggle"
+     href="#tours"             
+     id="navbarTours"
+     role="button"
+     data-bs-toggle="dropdown"
+     aria-expanded="false">
+    Tours
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="navbarTours">
+    <li><a class="dropdown-item" href="./beach-and-surf.html">Beach and Surf</a></li>
+    <li><a class="dropdown-item" href="./rainforest-canopy.html">Rainforest Canopy</a></li>
+    <li><a class="dropdown-item" href="./history-hike.html">Natural History Hike</a></li>
+  </ul>
+</li>
+        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+      </ul>
+ <!-- Icon button for toggling translation -->
+<button id="showTranslateBtn" class="btn btn-outline-secondary btn-sm" aria-label="Translate">
+  <i class="bi bi-translate" style="font-size: 1rem;"></i>
+</button>
+
+<!-- Hidden container for Google Translate -->
+<div id="translateContainer" style="display: none; margin-top: 0.5rem;">
+  <div id="google_translate_element"></div>
+</div>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'es,fr,de,pt',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+  document.getElementById('showTranslateBtn').addEventListener('click', () => {
+    const c = document.getElementById('translateContainer');
+    c.style.display = c.style.display === 'none' ? 'block' : 'none';
+  });
+</script>
+
+
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- Hero -->
+<header class="hero" style="
+  background-image: url('./assets/3.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+">
+  <div class="container text-center text-white py-5">
+    <h1>Experience Costa Rica with Us</h1>
+    <p class="lead">Adventure, Nature, and Culture Tours</p>
+    <a href="#tours" class="btn btn-contact btn-lg mt-3">Book Here</a>
+  </div>
+</header>
+<!-- ===== BEACH & SURF EXPERIENCE ===== -->
+<section id="tour-beach-surf" class="py-5 bg-white">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="row mb-4">
+      <div class="col">
+        <h2 class="display-6 fw-bold" style="color: rgb(34, 114, 9); font-family: Source Sans Pro; font-size: 40px;">Rainforest Canopy</h2>
+      </div>
+    </div>
+
+ <!-- Hero video & Quick Facts -->
+<div class="row align-items-start g-4">
+  <!-- YouTube Embed -->
+  <div class="col-lg-8">
+    <div class="ratio ratio-16x9 rounded-3 shadow-sm mb-4">
+      <iframe
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+        title="Beach & Surf Experience"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+<!-- Quick Facts & Booking -->
+<div class="col-lg-4">
+  <!-- Section Title -->
+  <h4 class="h5 fw-bold mb-3">Quick Facts & Booking</h4>
+  <ul class="list-group mb-4">
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Duration</span><strong>Full-day · 7 AM–Sunset</strong>
+    </li>
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Location</span><strong>Ciudad Cortes</strong>
+    </li>
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Skill Level</span><strong>Beginner–Advanced</strong>
+    </li>
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Price</span><strong>$130 USD pp</strong>
+    </li>
+  </ul>
+  <a href="https://wa.me/50600000000" class="btn btn-contact btn-md w-80">
+    Book Here
+  </a>
+</div>
+
+</div>
+
+<!-- Tabs: Overview / Gallery -->
+<ul class="nav nav-tabs mt-5" id="beachSurfTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="overview-tab"
+            data-bs-toggle="tab" data-bs-target="#overview"
+            type="button" role="tab" aria-controls="overview"
+            aria-selected="true">
+      Overview
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="gallery-tab"
+            data-bs-toggle="tab" data-bs-target="#gallery"
+            type="button" role="tab" aria-controls="gallery"
+            aria-selected="false">
+      Gallery
+    </button>
+  </li>
+</ul>
+
+<div class="tab-content border border-top-0 rounded-bottom-3 shadow-sm p-4" id="canopyTabContent">
+  <!-- Overview Pane -->
+  <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+    <h5>What to Expect</h5>
+    <p>
+      Embark on a thrilling 3-hour Rainforest Canopy Tour in Monteverde Cloud Forest Reserve. We’ll pick you up at 8:30 AM from your hotel, then drive you to the canopy park for a full safety briefing and harness fitting.
+    </p>
+    <p>
+      Zip between 8 treetop platforms on high-tension cables, soaring up to 50 meters above the forest floor. Spot sloths, toucans, and howler monkeys in their natural habitat as you glide through the misty canopy.
+    </p>
+    <p>
+      Pause to explore suspension bridges that offer panoramic views of the cloud forest, and learn about the region’s unique ecosystem from your certified guide.
+    </p>
+    <p>
+      Finish with a tropical snack break—including fresh fruit and juice—before a scenic return to your hotel by 11:30 AM.
+    </p>
+
+    <div class="row">
+      <!-- What’s Included -->
+      <div class="col-md-6 mb-4">
+        <h6 class="fw-semibold">✔️ What’s Included</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <i class="bi bi-check-circle text-success me-2"></i>
+            Round-trip transport
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle text-success me-2"></i>
+            All safety gear & harness
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle text-success me-2"></i>
+            Certified canopy guide
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle text-success me-2"></i>
+            Suspension bridge walk
+          </li>
+          <li>
+            <i class="bi bi-check-circle text-success me-2"></i>
+            Tropical snack & juice
+          </li>
+          <li>
+            <i class="bi bi-check-circle text-success me-2"></i>
+            Photo package
+          </li>
+        </ul>
+      </div>
+
+      <!-- What’s Not Included -->
+      <div class="col-md-6 mb-4">
+        <h6 class="fw-semibold">❌ What’s Not Included</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <i class="bi bi-x-circle text-danger me-2"></i>
+            Gratuities for guides
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-x-circle text-danger me-2"></i>
+            Personal travel insurance
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-x-circle text-danger me-2"></i>
+            Souvenir purchases
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-x-circle text-danger me-2"></i>
+            Transfers outside pick-up zone
+          </li>
+          <li>
+            <i class="bi bi-x-circle text-danger me-2"></i>
+            Additional refreshments
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Pane -->
+  <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+    <div class="row g-3">
+      <div class="col-6 col-md-4">
+        <img src="./assets/2.webp" class="img-fluid rounded clickable"
+             alt="Treetop platform"
+             data-bs-toggle="modal"
+             data-bs-target="#galleryModal"
+             data-bs-slide-to="0">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="./assets/2.webp" class="img-fluid rounded clickable"
+             alt="Zipline action"
+             data-bs-toggle="modal"
+             data-bs-target="#galleryModal"
+             data-bs-slide-to="1">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="./assets/2.webp" class="img-fluid rounded clickable"
+             alt="Suspension bridge"
+             data-bs-toggle="modal"
+             data-bs-target="#galleryModal"
+             data-bs-slide-to="2">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="./assets/2.webp" class="img-fluid rounded clickable"
+             alt="Cloud forest view"
+             data-bs-toggle="modal"
+             data-bs-target="#galleryModal"
+             data-bs-slide-to="3">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal + Carousel (all slides use 1.webp) -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content border-0 bg-transparent">
+      <div class="modal-body p-0">
+        <div id="galleryCarouselModal" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/2.webp" class="d-block w-100 rounded" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/2.webp" class="d-block w-100 rounded" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/2.webp" class="d-block w-100 rounded" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/2.webp" class="d-block w-100 rounded" alt="">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarouselModal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Prev</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#galleryCarouselModal" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sync thumbnail → correct slide -->
+<script>
+  document.getElementById('galleryModal').addEventListener('show.bs.modal', event => {
+    const slideTo = parseInt(event.relatedTarget.getAttribute('data-bs-slide-to'), 10);
+    const carousel = bootstrap.Carousel.getOrCreateInstance(document.getElementById('galleryCarouselModal'));
+    carousel.to(slideTo);
+  });
+</script>
+
+  
+</section>
+
+
+
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/50600000000"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat with us on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer"
+      style="background:url('./assets/1.webp') center/cover no-repeat;
+               position:relative;">>
+
+  <div class="container">
+
+    <!-- ‼️ Logo row – add this -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-auto">
+        <!-- Replace logo.svg with your file path -->
+        <a href="#top" class="d-inline-block">
+          <img src="./assets/whitelogo.png"
+               alt="Costa Rica Outdoors logo"
+               class="img-fluid"
+               style="max-height:300px;">
+        </a>
+      </div>
+    </div>
+    <!-- /Logo row -->
+
+    <div class="row">
+      <!-- About -->
+      <div class="col-md-4 mb-4">
+        <h5 >About Costa Rica Outdoors</h5>
+        <p>We craft unforgettable tours across Costa Rica’s most breathtaking landscapes, blending adventure and authenticity in every journey.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="./about.html">Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./contact.html">FAQ</a></li>
+          <li><a href="#tours">Tours</a></li>
+          <li><a href="#location">Getting Here</a></li>
+
+        </ul>
+      </div>
+
+      <!-- Contact & Social -->
+      <div class="col-md-4 mb-4">
+        <h5>Contact</h5>
+        <p>Email: <a href="mailto:info@ceibaadventures.com">info@ceibaadventures.com</a></p>
+        <p>Phone: <a href="tel:+50612345678">+506 1234 5678</a></p>
+        <div class="social-icons mt-3">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom text-center mt-4">
+      <p>
+        &copy; 2025 Costa Rica Outdoors. All rights reserved by <a href="https://nativainnovations.com" target="_blank">Nativa Innovations</a>.
+ 
+      </p>
+             <a href="#privacy">Privacy Policy</a> | 
+        <a href="#terms">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
